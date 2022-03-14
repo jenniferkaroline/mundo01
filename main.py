@@ -18,8 +18,17 @@ mundo01.desafio008()
 
 mundo01.desafio009()
 
+mundo01.desafio010()
 
+mundo01.desafio011()
 
+mundo01.desafio012()
+
+mundo01.desafio013()
+
+mundo01.desafio014()
+
+mundo01.desafio015()
 
 
 
