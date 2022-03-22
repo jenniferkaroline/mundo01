@@ -95,7 +95,15 @@ def desafio015():
   aluguel = int(input("por quantos dias o carro foi alugado? "))
   custo = (60 * aluguel) + (0.15 * km)
   print('você vai pagar R${} por {}km rodados e {} dias alugado'.format(custo, km, aluguel))
+
+def desafio016():
+  nmr = float(input("digite um valor: "))
+  print('o valor digitado foi {} e e sua porção inteira é {}'.format(nmr, int(nmr)))
+
+def
   
+
+
   
 
 
