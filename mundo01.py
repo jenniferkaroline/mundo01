@@ -100,37 +100,81 @@ def desafio016():
   nmr = float(input("digite um valor: "))
   print('o valor digitado foi {} e e sua porção inteira é {}'.format(nmr, int(nmr)))
 
-def
+def desafio017():
+  import math
+  co = float(input("comprimento do cateto oposto: "))
+  ca = float(input("comprimento do cateto adjacente: "))
+  hip = math.hypot(co, ca)
+  print('a hipotenusa mede {:.2f}'.format(hip))
+
+def desafio018():
+  from math import radians, sin, cos, tan
+  an = float(input("digite o ângulo que você deseja: "))
+  seno = sin(radians(an))
+  print('o ângulo de {} tem o seno de {:.2f}'.format(an, seno))
+  cosseno = cos(radians(an))
+  print('o ângulo de {} tem o cosseno de {:.2f}'.format(an, cosseno))
+  tangente = tan(radians(an))
+  print('o ângulo de {} tem a tangente de {:.2f}'.format(an, tangente))
+
+def desafio019():
+  import random
+  a1 = input("primeiro aluno(a): ")
+  a2 = input("segundo aluno(a): ")
+  a3 = input("terceiro aluno(a): ")
+  a4 = input("quarto aluno(a): ")
+  lista1 = [a1, a2, a3, a4]
+  sorteado = random.choice(lista1)
+  print('o aluno(a) sorteado foi {}'.format(sorteado))
+
+def desafio020():
+  import random
+  aluno1 = input("primeiro aluno(a): ")
+  aluno2 = input("segundo aluno(a): ")
+  aluno3 = input("terceiro aluno(a): ")
+  aluno4 = input("quarto aluno(a): ")
+  lista2 = [aluno1, aluno2, aluno3, aluno4]
+  random.shuffle(lista2)
+  print("a ordem será... ")
+  print(lista2)
+
+def desafio022():
+  nome = str(input("digite seu nome completo: ")).strip()
+  print("seu nome em maíusculas é {}".format(nome.upper()))
+  print("seu nome em minúsculas é {}".format(nome.lower()))
+  print("seu nome tem um total de {} letras".format(len(nome) - nome.count(' ')))
+  print("seu primeiro nome tem um total de {} letras".format(nome.find(' ')))
+
+def desafio023():
+  numr = int(input("me dê um número: "))
+  u = numr // 1 % 10
+  d = numr // 10 % 10
+  c = numr // 100 % 10
+  m = numr // 1000 % 10
+  print('a unidade é {}, a dezena é {}, a centena é {} e a unidade de milhar é {}'.format(u, d, c, m))
+
+def desafio024():
+  cid = str(input("em que cidade você mora? ")).strip()
+  print(cid[:5].upper() == 'SANTO')
+
+def desafio025():
+  nm = str(input("digite seu nome completo: ")).strip()
+  print("seu nome tem Silva? {}".format('silva' in nm.lower()))
+
+def desafio026():
+  frase = str(input("digite uma frase: ")).upper().strip()
+  print("a letra A aparece {} vezes na frase.".format(frase.count('A')))
+  print("a letra  aparece pela primeira vez na posição {}".format(frase.find('A') +1))
+  print("a letra aparece pela última vez na posição {}".format(frase.rfind('A') +1))
+
+def desafio027():
+  nc = str(input("digite seu nome completo: ")).strip()
+  print("muito prazer em te conhecer, {}".format(nc))
+  ncf = nc.split()
+  print("seu primeiro nome é {}".format(ncf[0]))
+  print("seu último nome é {}".format(ncf[len(ncf) -1]))
   
-
-
-  
-
-
   
   
   
   
-  
-  
-  
-  
-  
-
-
-  
-
-
-
-
-
-  
-  
-
-
-
-  
-
-
-
-

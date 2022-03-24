@@ -32,7 +32,25 @@ mundo01.desafio015()
 
 mundo01.desafio016()
 
+mundo01.desafio017()
 
+mundo01.desafio018()
+
+mundo01.desafio019()
+
+mundo01.desafio020()
+
+mundo01.desafio022()
+
+mundo01.desafio023()
+
+mundo01.desafio024()
+
+mundo01.desafio025()
+
+mundo01.desafio026()
+
+mundo01.desafio027()
 
 
 
