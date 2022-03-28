@@ -173,6 +173,116 @@ def desafio027():
   ncf = nc.split()
   print("seu primeiro nome é {}".format(ncf[0]))
   print("seu último nome é {}".format(ncf[len(ncf) -1]))
+
+def desafio028():
+  from random import randint
+  comp = randint (0, 5)
+  print('-=-' * 15)
+  print('vou pensar em um número de 0 a 5! tente advinhá-lo... ')
+  print('-=-' * 15)
+  player = int(input("em que número eu pensei? "))
+  if player == comp:
+    print("BOOYAH! Você acertou em cheio.")
+  else:
+    print("TENTE NOVAMENTE... Pensei em {} e não em {}.".format(comp, player))
+
+def desafio029():
+  velocidade = float(input("qual a velocidade atual do carro? "))
+  if velocidade > 80:
+    print("OPS... MULTADO! você excedeu o limite permitido que é 80km/h")
+    multa = (velocidade - 80) * 7
+    print("você deve pagar uma multa de R${:.2f}".format(multa))
+  else:
+    print("parabéns pela responsabilidade no trânsito; Tenha uma boa viagem!")
+
+def desafio030():
+  npi = int(input("me diga um número qualquer: "))
+  resultado = npi % 2
+  if resultado == 0:
+    print("o número {} é PAR.".format(npi))
+  else:
+    print("o número {} é ÍMPAR.".format(npi))
+
+def desafio031():
+  kmv = float(input("qual a distância da viagem em km? "))
+  if kmv <= 200:
+    psg1 = 0.50 * kmv
+    print("o preço da sua passagem será R${:.2f}".format(psg1))
+  else:
+    psg2 = 0.45 * kmv
+    print("o preço da sua passagem será R${:.2f}".format(psg2))
+
+def desafio032():
+  from datetime import date
+  ano = int(input("que ano você quer analisar? coloque 0 para anlisar o ano atual: "))
+  if ano % 4 == 0 and ano % 100 != 0 or ano % 400 == 0:
+    print("o ano {} é BISSEXTO!".format(ano))
+  else:
+    print("o ano {} não é BISSEXTO!".format(ano))
+
+def desafio033():
+  v1 = int(input("digite o primeiro valor: "))
+  v2 = int(input("digite o segundo valor: "))
+  v3 = int(input("digite o terceiro valor: "))
+  menor = v1
+  if v2 < v1 and v2 < v3:
+    menor = v2
+  if v3 < v1 and v3 < v2:
+    menor = v3
+  maior = v1
+  if v2 > v1 and v2 > v3:
+    maior = v2
+  if v3 > v1 and v3 > v2:
+    maior = v3
+  print("o maior valor digitado foi {} e o menor foi {}".format(maior, menor))
+
+def desafio034():
+  salario =  float(input("qual o salário do funcionário? R$"))
+  if salario <= 1250:
+    ns = salario + (salario * 15 / 100)
+  else:
+    ns = salario + (salario * 10 / 100)
+  print("o salário antigo era R${:.2f} e o novo será R${:.2f}".format(salario, ns))
+
+def desafio035():
+  print("~*~" * 15)
+  print("analisador de triângulos...")
+  print("~*~" * 15)
+  r1 = float(input("primeiro segmento: "))
+  r2 = float(input("segundo segmento: "))
+  r3 = float(input("terceiro segmento: "))
+  if r1 < r2 + r3 and r2 < r1 + r3 and r3 < r1 + r2:
+    print("os segmentos digitados podem formar um TRIÂNGULO!")
+  else:
+    print("os segmentos digitados NÃO podem formar um TRIÂNGULO!")
+
+
+def desafiocores():
+  print("\033[4;30;46mteste de cores no python!\033[m")
+  print("\033[1;30;45msegundo teste de cores no python!\033[m")
+  j = 100
+  k = 150
+  print("os valores são \033[34m{}\033[m & \033[31m{}\033[m!".format(j, k))
+  
+  
+  
+
+    
+  
+  
+  
+  
+
+
+
+
+
+
+    
+
+    
+    
+  
   
   
   

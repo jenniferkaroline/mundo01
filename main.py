@@ -52,7 +52,22 @@ mundo01.desafio026()
 
 mundo01.desafio027()
 
+mundo01.desafio028()
 
+mundo01.desafio029()
 
+mundo01.desafio030()
+
+mundo01.desafio031()
+
+mundo01.desafio032()
+
+mundo01.desafio033()
+
+mundo01.desafio034()
+
+mundo01.desafio035()
+
+mundo01.desafiocores()
 
 
